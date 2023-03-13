@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="@color/coklat"
+    tools:context=".MainActivity"
+    tools:ignore="Deprecated">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Masukkan Email dan Password"
+        android:textSize="25sp"
+        android:textStyle="bold"
+
+        />
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_y="30dp"
+        android:hint="Email"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_y="70dp"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/tombol1"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_x="13dp"
+        android:layout_y="125dp"
+        android:hint="Masuk"
+        android:textColorHint="@color/black"
+        android:backgroundTint="@color/abu"
+        />
+
+    <Button
+        android:id="@+id/tombol2"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_x="235dp"
+        android:layout_y="125dp"
+        android:hint="Daftar"
+        android:textColorHint="@color/black"
+        android:backgroundTint="@color/abu"
+        />
+
+</AbsoluteLayout>
