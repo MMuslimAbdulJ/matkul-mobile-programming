@@ -15,8 +15,8 @@ class MainActivity : AppCompatActivity() {
         btnSecond.setOnClickListener {
             Toast.makeText(this, "Second Activity", Toast.LENGTH_SHORT).show()
             val intent = Intent(this@MainActivity, SecondActivity::class.java)
-            intent.putExtra("nama", "Muhammad Muslim Abdul Jabbaar")
-            intent.putExtra("email", "mmuslimabdulj@gmail.com")
+            intent.putExtra("nama", "Muhammad Raihan Firdaus")
+            intent.putExtra("email", "mrfirda52@gmail.com")
             startActivity(intent)
         }
 
