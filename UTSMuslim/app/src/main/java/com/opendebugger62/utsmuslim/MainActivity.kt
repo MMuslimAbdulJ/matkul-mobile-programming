@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         val imageId = intArrayOf(
             R.drawable.logo_kotlin,
             R.drawable.logo_php,
@@ -23,6 +24,7 @@ class MainActivity : AppCompatActivity() {
             R.drawable.logo_python,
             R.drawable.logo_rust
         )
+
         val nama = arrayOf(
             "Kotlin",
             "PHP",
@@ -32,6 +34,7 @@ class MainActivity : AppCompatActivity() {
             "Python",
             "Rust"
         )
+
         val deskripsi = arrayOf(
             "Dikembangkan oleh JetBrains",
             "Dikembangkan oleh The PHP Development Team, Zend Technologies",
@@ -48,7 +51,6 @@ class MainActivity : AppCompatActivity() {
             val pemrograman = Pemrograman(nama[i], deskripsi[i], imageId[i])
             pemrogramanArrayList.add(pemrograman)
         }
-
 
         binding.listView.adapter = MyAdapter(this, pemrogramanArrayList)
 
