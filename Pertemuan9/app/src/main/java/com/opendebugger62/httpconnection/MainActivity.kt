@@ -36,9 +36,9 @@ class MainActivity : AppCompatActivity() {
         val stringRequest = StringRequest(
             Request.Method.GET, url,
             Response.Listener<String> { response ->
-                hasil.text = "Hasilnya adalah konek"
+                hasil.text = "Connection success"
             },
-            Response.ErrorListener { hasil.text = "Tidak konek" })
+            Response.ErrorListener { hasil.text = "Connection Failed" })
         queue.add(stringRequest)
     }
 }

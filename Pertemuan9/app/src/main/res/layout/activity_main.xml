@@ -21,10 +21,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="10dp"
-            android:fadeScrollbars="false"
-            android:fontFamily="casual"
             android:gravity="center"
-            android:text="Cek Koneksi"
+            android:text="Connect"
             android:textSize="20sp"
             android:textStyle="bold"/>
 
